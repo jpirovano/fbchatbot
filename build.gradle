@@ -34,6 +34,7 @@ dependencies {
     compile "org.grails:grails-web-boot"
     compile "org.grails.plugins:cache"
     compile "org.grails.plugins:scaffolding"
+    compile 'org.grails.plugins:http-builder-helper:1.0.2'
     console "org.grails:grails-console"
     profile "org.grails.profiles:web-plugin"
     provided "org.grails:grails-plugin-services"
@@ -58,14 +59,13 @@ grailsPublish {
     // TODO: Provide values here
     user = 'user'
     key  = 'key'
-    githubSlug = 'foo/bar'
+    githubSlug = 'jpirovano/fbchatbot'
     license {
         name = 'Apache-2.0'
     }
-
-    title = "My Plugin"
-    desc = "Full plugin description"
-    developers = [johndoe:"Jonathan Willian Pirovano"]
+    title      = "My Plugin"
+    desc       = "Full plugin description"
+    developers = [jpirovano:"Jonathan Willian Pirovano"]
     portalUser     = ""
     portalPassword = ""
 }
